@@ -1,5 +1,3 @@
-
-
 def match_ends(words):
     count = 0    
     for i in words:
@@ -9,8 +7,6 @@ def match_ends(words):
             count +=0
     return count
 
-
-####second exos#####
 def front_x(words):
     list=[]
     xlist=[]
@@ -20,22 +16,16 @@ def front_x(words):
         else: 
             list.append(i)
     return sorted(xlist) + sorted(list)
-    
-front_x(["aa","bb","xa","xb"])
 
-#####Third exo#############
 def sort_last(tuples):
     def last(x):
         return x[-1]
     return sorted(tuples, key=last)
     
 
-
-#The forth one
 def remove_adjacent(nums):
     return list(set(nums))
   
-#The last one
 def linear_merge(list1,list2):
     return sorted(list(set(list1+list2)))
     
